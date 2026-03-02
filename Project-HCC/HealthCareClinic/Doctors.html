@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctors - HealthCare</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/doctors.js" defer></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <b> HealthCare</b>
+  <div>
+ <a href="Home.html">Home</a>
+<a href="Doctors.html">Doctors</a>
+<a href="Appointments.html">Appointments</a>
+<a href="About.html">About</a>
+<a href="Contact.html">Contact</a>
+<a href="Login.html" id="loginLink">Login</a>
+<a href="Signup.html" id="signupLink">Signup</a>
+<a href="#" id="logoutBtn" style="display:none;">Logout</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Our Doctors</h2>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search by name or specialization" onkeyup="searchDoctor()">
+
+  <!-- Doctor Cards -->
+  <div id="doctorContainer"></div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>Address: Kadapa | Mon-Sat 9AM-6PM</p>
+  <p>Email: support@healthcare.com | Phone: 9876543210</p>
+  <p>© 2026 HealthCare</p>
+</footer>
+
+</body>
+</html>

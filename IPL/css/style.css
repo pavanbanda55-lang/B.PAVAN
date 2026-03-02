@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+.navbar {
+    background: #111827;
+    color: white;
+    padding: 15px 40px;
+     display: flex;
+    justify-content:space-between;
+    align-items: center; 
+}
+.nav-links {
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.nav-links a.active {
+    color: orange;
+}
+.container {
+    padding: 10px;
+    text-align: none;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* input, select {
+    padding: 10px;
+    margin: 10px;
+} */
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #111827;
+    color: white;
+    cursor: pointer;
+}
+
+.top-team {
+    background: #d1fae5 !important;
+}
+
+.upcoming {
+    border-left: 5px solid green;
+}
+
+.completed {
+    border-left: 5px solid red;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

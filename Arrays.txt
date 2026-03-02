@@ -1,0 +1,182 @@
+###Reverse an string an array
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        String s=sc.nextLine();
+        int n=s.length();
+        char arr[]=new char[n];
+        for(int i=n-1,j=0;i>=0;i--,j++)
+        {
+            arr[j]=s.charAt(i);
+        }
+        System.out.println(arr);
+        sc.close();
+        }
+}
+
+###summation of array elements
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args){
+	    Scanner sc =new Scanner(System.in);
+	    int S=sc.nextInt();
+	    int arr[]=new int[S];
+	    int sum=0;
+	    for(int i=0;i<S;i++){
+	        arr[i]=sc.nextInt();
+	        sum+=arr[i];
+	    }
+	        System.out.print(sum);
+	  }
+}
+
+
+####Search with cops 
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc =new Scanner(System.in);
+	    int S=sc.nextInt();
+	    int arr[]=new int[S];
+	    for(int i=0;i<S;i++){
+	        arr[i]=sc.nextInt();
+	    }
+	    int x=sc.nextInt();
+	    boolean found=false;
+	    for(int i=0;i<S;i++)
+	    {
+	        if(arr[i]==x){
+	            found=true;
+	            break;
+	        }	
+	   }
+	    if(found)
+	    {
+	        System.out.println("yes");
+	    }
+	    else{
+	        System.out.println("no");
+	        
+	    }
+	  }
+}
+
+
+////Duplicates array print
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int[] arr=new int[N];
+        for (int i=0;i<N;i++){
+            arr[i]=sc.nextInt();
+        }
+        for (int i=0;i<N;i++){
+            for (int j =i+1;j<N;j++){
+                if (arr[i]==arr[j]){
+                    System.out.println(arr[i]);
+                    return;   
+                }
+            }
+        }
+    }
+}
+
+///unique elements print
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int[] arr = new int[N];
+        for (int i=0;i<N;i++){
+            arr[i]=sc.nextInt();
+        }
+        for (int i=0;i<N;i++){
+            int count=0;
+            for (int j=0;j<N;j++){
+                if (arr[i] == arr[j]){
+                    count++;
+                }
+            }
+            if (count==1){
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+}
+
+////polindrone array check
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for (int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        boolean palindrome=true;
+        for (int i=0;i<n;i++){
+            if (arr[i]!=arr[n-1-i]){
+                palindrome = false;
+                break;
+            }
+        }
+        if (palindrome) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
+
+///Max One
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for (int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int max=arr[0];   
+        int index=0;      
+        for (int i=1;i<n;i++) {
+            if (arr[i]>max) {
+                max=arr[i];
+                index=i;
+            }
+        }
+        System.out.println(index);
+    }
+}
+
+///Min array
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        long[] arr=new long[n];
+        for (int i=0;i<n;i++){
+            arr[i]=sc.nextLong();
+        }
+        long min=arr[0];   
+        int index=0;      
+        for (int i=1;i<n;i++) {
+            if (arr[i]<min) {
+                min=arr[i];
+                index=i;
+            }
+        }
+        System.out.println(index);
+    }
+}

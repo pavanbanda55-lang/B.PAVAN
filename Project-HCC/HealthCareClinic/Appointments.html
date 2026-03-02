@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appointments - HealthCare</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/appointments.js" defer></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <b>🏥 HealthCare</b>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="doctors.html">Doctors</a>
+    <a href="appointments.html">Appointments</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" id="loginLink">Login</a>
+    <a href="signup.html" id="signupLink">Signup</a>
+    <a href="#" id="logoutBtn" style="display:none;">Logout</a>
+  </div>
+</nav>
+
+<div class="container">
+  <h2>Book Appointment</h2>
+
+  <form id="appointmentForm">
+    <input type="text" id="patientName" placeholder="Patient Name" readonly>
+
+    <select id="doctorSelect" required>
+      <option value="">Select Doctor</option>
+      <option value="Dr. Rao">Dr. Rao - Cardiology</option>
+      <option value="Dr. Meena">Dr. Meena - Dermatology</option>
+      <option value="Dr. Kumar">Dr. Kumar - Orthopedics</option>
+    </select>
+
+    <input type="date" id="date" required>
+    <input type="time" id="time" required>
+    <textarea id="reason" placeholder="Reason / Notes" required></textarea>
+
+    <button type="submit">Book Appointment</button>
+  </form>
+
+  <h2>Booked Appointments</h2>
+
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="appointmentTable"></tbody>
+  </table>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>Address: Kadapa | Mon-Sat 9AM-6PM</p>
+  <p>Email: support@healthcare.com | Phone: 9876543210</p>
+  <p>© 2026 HealthCare</p>
+</footer>
+
+</body>
+</html>

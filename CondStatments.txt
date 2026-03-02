@@ -1,0 +1,172 @@
+///B - Small, Large, or Equal 
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if (a < b) {
+            System.out.println("a < b");
+        } else if (a > b) {
+            System.out.println("a > b");
+        } else {
+            System.out.println("a == b");
+        }
+    }
+}
+
+///Fever
+import java.util.*;
+public class Main{
+	public static void main(String args[]) {
+	        Scanner sc = new Scanner(System.in);
+	        int T = sc.nextInt();
+	        for (int i = 0; i < T; i++) {
+	            int X = sc.nextInt(); 
+	            if (X > 98) {
+	                System.out.println("YES");
+	            } else {
+	                System.out.println("NO");
+	            }
+	        }
+	    }
+	}
+
+///Lunchtime
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T=sc.nextInt(); 
+        for (int i=0;i<T;i++) {
+            int X=sc.nextInt(); 
+            if (X >=1 && X<=4) {
+                System.out.println("YES");
+            } 
+            else {
+                System.out.println("NO");
+            }
+        }
+        sc.close();
+    }
+}
+
+///Is it hot or cold
+import java.util.Scanner;
+public class Main{
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt(); 
+        for (int i=0;i<T;i++) {
+            int C=sc.nextInt(); 
+            if (C>20) {
+                System.out.println("HOT");
+            } else {
+                System.out.println("COLD");
+            }
+        }
+    }
+}
+///Discount
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		for(int i=0;i<T;i++)
+		{
+		int x=sc.nextInt();   //Enter discount
+		int store=100-x;
+		System.out.println(store);
+		}
+		sc.close();
+	}
+}
+
+///battery low
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		for(int i=0;i<T;i++)
+		{
+		int X=sc.nextInt();
+		if(X<=15)
+		{
+			System.out.println("YES");
+		}
+		else {
+			System.out.println("NO");
+		}
+		}
+		sc.close();
+	}
+}
+
+////Next even intiger
+import java.util.*;
+public class Main{
+	public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n%2==0) 
+        {
+            System.out.println(n+2);
+        }
+        else{
+            System.out.println(n+1);
+        }
+    }
+}
+
+///Sum and product 3
+import java.util.*;
+public class Main{
+	public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int a=n/100;
+        int b=(n/10)%10;
+        int c=n%10;
+        int sum=0,product=0;
+        sum=a+b+c;
+        product=a*b*c;
+        System.out.println(sum+" "+product);
+        }
+}
+
+///Sum of digits
+import java.util.*;
+public class Main{
+	public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int a=n/1000;
+        int b=n%10;
+        int sum=0;
+        sum=a+b;
+        System.out.println(sum);
+        }
+}
+
+///Helping Chef
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc =new Scanner(System.in);
+	    int T=sc.nextInt();
+	    for(int i=0;i<T;i++){
+	        int N=sc.nextInt();
+	    if(N<10)
+	    {
+	        System.out.println("Thanks for helping Chef!");
+	    }
+	    else{
+	        System.out.println("-1");
+	    }  
+	    }
+	  }
+}
+
